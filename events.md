@@ -9,43 +9,41 @@ permalink: /events/
   <h1><span class="leaf-underline">out in the world</span></h1>
 </header>
 
-<section style="margin-top: 3.5rem;">
-  <p class="kicker">🎤</p>
-  <h2 style="margin-top: 0.5rem;">invited talks</h2>
-  <ul class="entry-list" style="margin-top: 1.5rem;">
-    {% for t in site.data.talks %}
-    <li class="soft-card pub-card">
-      <div class="top-row">
-        <h3>{{ t.venue }}</h3>
-        <span class="tag">{{ t.date }}</span>
-      </div>
-      {% if t.role %}<p class="meta" style="font-style: italic;">{{ t.role }}</p>{% endif %}
-      {% if t.url and t.url != "#" %}
-      <div class="links"><a class="tag tag--paper" href="{{ t.url }}">group ↗</a></div>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+<div class="two-col" style="margin-top: 3rem; align-items: start;">
+  <section>
+    <div class="section-heading"><h2>invited talks</h2></div>
+    <ul class="entry-list">
+      {% for t in site.data.talks %}
+      <li class="soft-card pub-card">
+        <p class="entry-date">{{ t.date }}</p>
+        <div class="top-row">
+          <h3>{{ t.venue }}</h3>
+        </div>
+        {% if t.role %}<p class="meta" style="font-style: italic;">{{ t.role }}</p>{% endif %}
+        {% if t.url and t.url != "#" %}
+        <div class="links"><a class="tag tag--paper" href="{{ t.url }}">group ↗</a></div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 
-<section style="margin-top: 3.5rem;">
-  <p class="kicker">📅</p>
-  <h2 style="margin-top: 0.5rem;">events</h2>
-  <ul class="entry-list" style="margin-top: 1.5rem;">
-    {% for e in site.data.events %}
-    <li class="soft-card pub-card">
-      <div class="top-row">
-        <h3>{{ e.venue }}</h3>
-        <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-          <span class="tag">{{ e.date }}</span>
+  <section>
+    <div class="section-heading"><h2>events</h2></div>
+    <ul class="entry-list">
+      {% for e in site.data.events %}
+      <li class="soft-card pub-card">
+        <div class="top-row">
+          <p class="entry-date" style="margin: 0;">{{ e.date }}</p>
           {% if e.role %}<span class="tag tag--video">{{ e.role }}</span>{% endif %}
         </div>
-      </div>
-      {% if e.note %}<p class="meta" style="font-style: italic;">{{ e.note }}</p>{% endif %}
-      {% if e.url and e.url != "#" %}
-      <div class="links"><a class="tag tag--paper" href="{{ e.url }}">visit ↗</a></div>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+        <h3 style="margin-top: 0.35rem;">{{ e.venue }}</h3>
+        {% if e.note %}<p class="meta" style="font-style: italic;">{{ e.note }}</p>{% endif %}
+        {% if e.url and e.url != "#" %}
+        <div class="links"><a class="tag tag--paper" href="{{ e.url }}">visit ↗</a></div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

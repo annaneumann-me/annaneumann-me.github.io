@@ -6,7 +6,7 @@ title: home
 <section class="hero">
   <div>
     <p class="kicker">phd student · critical computing · responsible ai</p>
-    <h1><span class="leaf-underline">anna neumann</span> <span aria-hidden="true">🌱</span></h1>
+    <h1><span class="leaf-underline">anna neumann</span> <span aria-hidden="true">🌿</span></h1>
     <p class="affiliation">compliant and accountable systems group (led by jat singh) at the research center for trustworthy ai, germany</p>
     <p class="focus">examining how ai systems influence sociotechnical structures with a focus on responsible ai practices in algorithmic supply chains</p>
 
