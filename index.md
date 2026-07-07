@@ -32,4 +32,4 @@ supply chains. 🔗
 Obsessed with obscure feminist literature, thrifting, and good matcha.
 <br>( ˵ •̀ ᴗ •́˵ )
 
-**Let's chat** 🌿🍵 — [your.email@example.com](mailto:your.email@example.com)
+**Let's chat** 🌿🍵 — [an@newmanconsulting.de](mailto:an@newmanconsulting.de)

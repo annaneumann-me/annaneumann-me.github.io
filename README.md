@@ -21,7 +21,7 @@ block, then edit the fields. `links` and `award` are optional.
 
 ## Still to fill in
 
-- `index.md`: swap the placeholder email, Google Scholar, Substack, and Affiliation links for your real URLs
+- `index.md`: swap the placeholder Google Scholar, Substack, and Affiliation links for your real URLs
 - Add your actual CV as `assets/cv.pdf` (referenced from the homepage)
 - Several `url: "#"` placeholders in `_data/*.yml` (paper videos, media links, etc.) need real URLs
 - Optional: add a `favicon.ico` / profile photo to `assets/` if you want one
