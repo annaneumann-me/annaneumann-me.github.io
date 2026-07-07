@@ -1,10 +1,12 @@
 courses:
-  - term: "WS 25/26, SS 26"
-    title: "Seminar: Responsible AI: Issues and Methods"
-  - term: "SS 26"
-    title: "Master's Research Project: Social Media for Agents and Humans"
+  - kind: "seminar"
+    title: "Responsible AI: Issues and Methods"
+    term: "WS 25/26, SS 26"
+  - kind: "master's research project"
+    title: "Social Media for Agents and Humans"
+    term: "SS 26"
 
 theses:
   - year: "26"
     student: "Lucas Lichner"
-    status: "WIP"
+    status: "wip"

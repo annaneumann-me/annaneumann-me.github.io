@@ -1,0 +1,16 @@
+# Research threads that show up across papers, talks, and teaching.
+- title: "algorithmic supply chains"
+  summary: "mapping accountability across the stack of models, datasets, and downstream deployments — who is responsible when a system cascades?"
+  tags: ["governance", "auditing", "supply chains"]
+
+- title: "system prompts as bias mechanism"
+  summary: "empirical work on how developer-facing system prompts encode positional power in LLM outputs, and what auditing them requires."
+  tags: ["LLMs", "bias", "auditing"]
+
+- title: "cascading effects in ai safety"
+  summary: "a framework for evaluating downstream harms that don't surface in single-model benchmarks — a multifaceted governance challenge."
+  tags: ["safety", "policy"]
+
+- title: "meaningful stakeholder involvement"
+  summary: "methods for bringing affected communities into technical audits rather than treating them as post-hoc validators."
+  tags: ["participatory", "methods"]

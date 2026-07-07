@@ -10,22 +10,27 @@
   {% seo %}
 </head>
 <body>
-  <div class="wrap">
-    <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">Anna Neumann</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="{{ '/' | relative_url }}"><span aria-hidden="true">🌱</span> anna neumann</a>
       <nav>
-        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>home</a>
-        <a href="{{ '/research/' | relative_url }}" {% if page.url contains 'research' %}class="active"{% endif %}>stuff i did</a>
+        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>about</a>
+        <a href="{{ '/publications/' | relative_url }}" {% if page.url contains 'publications' %}class="active"{% endif %}>papers</a>
+        <a href="{{ '/projects/' | relative_url }}" {% if page.url contains 'projects' %}class="active"{% endif %}>research</a>
+        <a href="{{ '/talks/' | relative_url }}" {% if page.url contains 'talks' %}class="active"{% endif %}>talks & service</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      {{ content }}
-    </main>
+  <main class="container">
+    {{ content }}
+  </main>
 
-    <footer class="site-footer">
-      <span>&copy; {{ site.time | date: '%Y' }} Anna Neumann</span>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>made with matcha 🍵</p>
+      <p>&copy; {{ site.time | date: '%Y' }} anna neumann</p>
+    </div>
+  </footer>
 </body>
 </html>

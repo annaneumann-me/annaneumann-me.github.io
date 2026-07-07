@@ -1,0 +1,63 @@
+# Copy a block to add a new paper. "status" and "links" are optional.
+- title: "governing technology governed by natural language"
+  venue: "FAccT'26"
+  role: "first author"
+  status: "forthcoming"
+  year: 2026
+
+- title: "who controls the conversation? user perspectives on generative ai (LLM) system prompts"
+  venue: "CHI'26"
+  role: "first author"
+  status: "best paper award"
+  year: 2026
+
+- title: "ai safety evaluations need to consider cascading effects"
+  venue: "IASEAI'26 & ICML'26 workshop on technical ai governance research"
+  role: "first author"
+  year: 2026
+  links:
+    - label: "video"
+      url: "#"
+
+- title: "position is power: system prompts as a mechanism of bias in language models"
+  venue: "FAccT'25"
+  role: "first author"
+  year: 2025
+  links:
+    - label: "video"
+      url: "#"
+
+- title: "cascading effects: a multifaceted governance challenge in ai systems"
+  venue: "EurIPS'25 workshop 'beyond regulation: private ai governance' (PAIG)"
+  role: "first author"
+  year: 2025
+
+- title: "training your replacement: the creative double-bind of generative ai"
+  venue: "ISAT'25"
+  role: "first author"
+  year: 2025
+
+- title: "caught in the cascade: why LLM auditing is missing the middle"
+  venue: "CHI'25 HEAL workshop"
+  role: "first author"
+  year: 2025
+
+- title: "between threat and tool: when users are asked to design their competitors"
+  venue: "CHI'25 GenAI@CHI workshop"
+  role: "first author"
+  year: 2025
+
+- title: "✨ dispelling ai's magic ✨: demystification as resistance to ai solutionism"
+  venue: "CHI'25 resisting ai solutionism workshop"
+  role: "first author"
+  year: 2025
+
+- title: "prioritization of risks from artificial intelligence: a delphi study of 272 international experts"
+  venue: "arXiv'26"
+  role: "co-author"
+  year: 2026
+
+- title: "deep learning-based claim matching with multiple negatives training"
+  venue: "ICNLSP'23"
+  role: "first author"
+  year: 2023
