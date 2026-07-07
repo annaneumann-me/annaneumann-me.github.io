@@ -1,11 +1,11 @@
 ---
 layout: default
-title: papers
+title: publications
 permalink: /publications/
 ---
 
 <header class="page-header">
-  <p class="kicker">𓂃🖊 papers</p>
+  <p class="kicker">𓂃🖊 publications</p>
   <h1><span class="leaf-underline">stuff i wrote</span></h1>
   <p>peer-reviewed papers, workshop contributions, and preprints — mostly first-authored, across FAccT, CHI, ICML workshops, and friends.</p>
 </header>

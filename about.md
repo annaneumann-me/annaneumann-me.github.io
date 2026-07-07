@@ -26,13 +26,17 @@ permalink: /about/
     <div class="soft-card">
       <p class="kicker">external</p>
       <ul class="about-list">
-        {% for s in site.data.service.external %}<li><span class="dot">·</span><span>{{ s }}</span></li>{% endfor %}
+        {% for s in site.data.service.external %}
+        <li><span>{{ s.venue }}</span> <span class="tag">{{ s.role }}</span></li>
+        {% endfor %}
       </ul>
     </div>
     <div class="soft-card">
       <p class="kicker">internal</p>
       <ul class="about-list">
-        {% for s in site.data.service.internal %}<li><span class="dot">·</span><span>{{ s }}</span></li>{% endfor %}
+        {% for s in site.data.service.internal %}
+        <li><span class="year">{{ s.year }}</span><span>{{ s.role }}</span></li>
+        {% endfor %}
       </ul>
     </div>
   </div>

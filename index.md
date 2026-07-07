@@ -40,7 +40,8 @@ title: home
       {% for m in site.data.media %}
       <li>
         <p class="date">{{ m.date }} · {{ m.outlet }}</p>
-        <p class="title">{% if m.url and m.url != "#" %}<a href="{{ m.url }}" style="color: inherit;">{{ m.title }}</a>{% else %}{{ m.title }}{% endif %}</p>
+        <p class="title">{{ m.title }}</p>
+        {% if m.url and m.url != "#" %}<a class="tag tag--paper" href="{{ m.url }}">read ↗</a>{% endif %}
       </li>
       {% endfor %}
     </ul>

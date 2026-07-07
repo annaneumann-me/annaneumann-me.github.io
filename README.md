@@ -5,11 +5,11 @@ Personal research site, built with Jekyll (GitHub Pages builds this automaticall
 ## Pages
 
 - `index.md` — home: hero, "media" / "let's chat + obsessed with" cards, research threads
-- `about.md` — bio, CV link, academic service
-- `publications.md` — papers, grouped by year, with typed links (paper/arxiv/video/poster) and authors
-- `events.md` — invited talks and events
+- `about.md` — bio, CV link, academic service (with role tags)
+- `publications.md` — publications, grouped by year, with authors and typed file links (paper/arxiv/video/poster)
+- `events.md` — invited talks and events, card-based with tags and group/event links
 - `teaching.md` — courses and supervised theses
-- `gallery.md` — photo carousel
+- `gallery.md` — photo carousel, auto-populated from `assets/img/gallery/`
 
 ## Editing content
 
@@ -18,21 +18,31 @@ Everything you'll normally touch is in `_data/*.yml`:
 - `_data/publications.yml` — copy a block to add a new paper. `status`, `authors`, and `links`
   are optional. `authors` is a plain string with the full author list. Each link has a `type`
   (`paper` / `arxiv` / `video` / `poster` — each renders in a different green hue) and a `url`.
-  To link to a file you have locally (e.g. a poster PDF), drop it into `assets/papers/` and
-  point `url` at `/assets/papers/yourfile.pdf`.
+  - To link to a **paper PDF** you have locally: drop it into `assets/papers/`, set
+    `url: "/assets/papers/yourfile.pdf"`.
+  - To link to a **poster**: drop it into `assets/posters/`, set
+    `url: "/assets/posters/yourfile.pdf"`.
+  - `video` / `arxiv` links are usually external URLs.
 - `_data/projects.yml` — research threads shown on the home page (title, summary, tags)
-- `_data/talks.yml` — invited talks (date, venue)
-- `_data/events.yml` — conferences/events attended or presented at
-- `_data/media.yml` — press/media mentions (shown on home page)
-- `_data/service.yml` — reviewing + internal service, shown on the about page (`external:` / `internal:` string lists)
+- `_data/talks.yml` — invited talks (date, venue). `role` and `url` (link to the hosting group) are optional.
+- `_data/events.yml` — conferences/events attended or presented at. `role` renders as a tag,
+  `note` is optional extra detail, `url` links to the event/group site.
+- `_data/media.yml` — press/media mentions (shown on home page). `url` links out to the piece.
+- `_data/service.yml` — academic service, shown on the about page. `external` entries are
+  `{venue, role}` (role renders as a tag, e.g. "reviewer"); `internal` entries are `{year, role}`.
 - `_data/teaching.yml` — courses and supervised theses
-- `_data/gallery.yml` — photos for the gallery carousel. Drop an image in `assets/img/`, then
-  add `{ src: "/assets/img/yourfile.jpg", caption: "..." }` to the list.
+
+## Gallery
+
+Just drop an image file into `assets/img/gallery/` and it automatically appears in the
+carousel on `/gallery/` — no data file to edit. The caption is generated from the filename
+(dashes/underscores become spaces), so name files accordingly, e.g. `matcha-shop-berlin.jpg`
+becomes "matcha shop berlin".
 
 ## Photo
 
-The homepage portrait is `assets/img/anna.jpg`, rendered in black-and-white with a green
-duotone wash (pure CSS, see `.avatar` in `assets/css/style.css` — no image editing needed
+The homepage portrait is `assets/img/anna.jpg`, rendered in black-and-white with a subtle
+green shimmer (pure CSS, see `.avatar` in `assets/css/style.css` — no image editing needed
 to update it, just swap the file and keep the same name, or update the `src` in `index.md`).
 
 ## Still to fill in
@@ -41,7 +51,7 @@ to update it, just swap the file and keep the same name, or update the `src` in 
 - `index.md`: the linkedin/bluesky/x buttons in "let's chat" are placeholder `#` links — swap in your real profile URLs
 - Add your actual CV as `assets/cv.pdf` (linked from home and the about page)
 - The "anna neumann et al." placeholder in `_data/publications.yml` needs real full author lists per paper
-- Several `url: "#"` placeholders in `_data/*.yml` and `_data/publications.yml` need real URLs
+- Several `url: "#"` placeholders in `_data/*.yml` and `_data/publications.yml` need real URLs (group pages, event pages, media articles, paper/poster files)
 
 ## Preview locally
 

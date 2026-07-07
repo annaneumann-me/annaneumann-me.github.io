@@ -1,8 +1,9 @@
 # Copy a block to add a new paper. "status", "authors", and "links" are optional.
 # "authors" is a plain string — put the full author list as it should appear.
 # Each link has a "type" (paper / arxiv / video / poster — each gets its own green hue)
-# and a "url". To link to a file you have locally (e.g. a poster PDF), drop it into
-# assets/papers/ and point url at "/assets/papers/yourfile.pdf".
+# and a "url". To link to a file you have locally: drop a paper PDF into assets/papers/
+# and point url at "/assets/papers/yourfile.pdf", or drop a poster into assets/posters/
+# and point url at "/assets/posters/yourfile.pdf". "video" and "arxiv" are usually external links.
 - title: "governing technology governed by natural language"
   venue: "FAccT'26"
   role: "first author"
