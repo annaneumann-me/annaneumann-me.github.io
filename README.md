@@ -36,9 +36,7 @@ Everything you'll normally touch is in `_data/*.yml`:
 
 Just drop an image file into `assets/img/gallery/` and it automatically appears in the
 grid on `/gallery/` — no data file to edit. Images keep their natural proportions (no
-cropping), so any size/orientation works. The caption is generated from the filename
-(dashes/underscores become spaces), so name files accordingly, e.g. `matcha-shop-berlin.jpg`
-becomes "matcha shop berlin".
+cropping), so any size/orientation works. No captions are shown.
 
 ## Photo
 

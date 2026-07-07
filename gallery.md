@@ -15,7 +15,6 @@ permalink: /gallery/
   {% for img in gallery_images %}
   <figure>
     <img src="{{ img.path | relative_url }}" alt="{{ img.basename | replace: '-', ' ' | replace: '_', ' ' }}">
-    <figcaption>{{ img.basename | replace: '-', ' ' | replace: '_', ' ' }}</figcaption>
   </figure>
   {% endfor %}
 </div>

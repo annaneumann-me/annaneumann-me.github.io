@@ -16,7 +16,6 @@ permalink: /publications/
   <div class="year-heading">
     <h2>{{ group.name }}</h2>
     <span class="rule"></span>
-    <span class="count">{{ group.items.size }} {% if group.items.size == 1 %}paper{% else %}papers{% endif %}</span>
   </div>
   <ul class="entry-list">
     {% for p in group.items %}
