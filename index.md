@@ -11,6 +11,7 @@ title: home
     <p class="focus">examining how ai systems influence sociotechnical structures with a focus on responsible ai practices in algorithmic supply chains</p>
 
     <div class="links">
+      <a class="tag" href="/assets/cv.pdf">cv ↗</a>
       <a class="tag" href="https://scholar.google.com/">google scholar ↗</a>
       <a class="tag" href="https://substack.com/">substack ↗</a>
       <a class="tag" href="#">affiliation ↗</a>
@@ -33,22 +34,6 @@ title: home
 </section>
 
 <div class="two-col">
-  <div class="soft-card">
-    <h2 style="font-size: 1.1rem;">obsessed with</h2>
-    <div class="links" style="margin-top: 1rem;">
-      <span class="tag">obscure feminist literature</span>
-      <span class="tag">thrifting</span>
-      <span class="tag">good matcha 🍵</span>
-    </div>
-
-    <hr>
-
-    <h3>let's chat 🌿</h3>
-    <p style="font-size: 0.9rem; color: var(--muted-foreground);">
-      reach out via any of the links above — always up for a conversation about responsible ai, feminist tech critique, or matcha spots.
-    </p>
-  </div>
-
   <div class="soft-card media-card">
     <h2 style="font-size: 1.1rem;">media</h2>
     <ul>
@@ -59,6 +44,28 @@ title: home
       </li>
       {% endfor %}
     </ul>
+  </div>
+
+  <div class="soft-card">
+    <h3>let's chat 🌿</h3>
+    <p style="font-size: 0.9rem; color: var(--muted-foreground);">
+      always up for a conversation about responsible ai, feminist tech critique, or matcha spots.
+    </p>
+    <div class="links" style="margin-top: 0.75rem;">
+      <a class="tag" href="mailto:an@newmanconsulting.de">email ↗</a>
+      <a class="tag" href="#">linkedin ↗</a>
+      <a class="tag" href="#">bluesky ↗</a>
+      <a class="tag" href="#">x ↗</a>
+    </div>
+
+    <hr>
+
+    <h2 style="font-size: 1.1rem;">obsessed with</h2>
+    <div class="links" style="margin-top: 1rem;">
+      <span class="tag">obscure feminist literature</span>
+      <span class="tag">thrifting</span>
+      <span class="tag">good matcha 🍵</span>
+    </div>
   </div>
 </div>
 

@@ -4,20 +4,22 @@ Personal research site, built with Jekyll (GitHub Pages builds this automaticall
 
 ## Pages
 
-- `index.md` — home: hero, "obsessed with" / "media" cards, research threads
+- `index.md` — home: hero, "media" / "let's chat + obsessed with" cards, research threads
 - `about.md` — bio, CV link, academic service
-- `publications.md` — papers, grouped by year, with typed links (paper/arxiv/video/poster)
+- `publications.md` — papers, grouped by year, with typed links (paper/arxiv/video/poster) and authors
+- `events.md` — invited talks and events
 - `teaching.md` — courses and supervised theses
-- `talks.md` — invited talks and events
 - `gallery.md` — photo carousel
 
 ## Editing content
 
 Everything you'll normally touch is in `_data/*.yml`:
 
-- `_data/publications.yml` — copy a block to add a new paper. `status` and `links` are optional.
-  Each link has a `type` (`paper` / `arxiv` / `video` / `poster` — each renders in a different
-  green hue) and a `url`.
+- `_data/publications.yml` — copy a block to add a new paper. `status`, `authors`, and `links`
+  are optional. `authors` is a plain string with the full author list. Each link has a `type`
+  (`paper` / `arxiv` / `video` / `poster` — each renders in a different green hue) and a `url`.
+  To link to a file you have locally (e.g. a poster PDF), drop it into `assets/papers/` and
+  point `url` at `/assets/papers/yourfile.pdf`.
 - `_data/projects.yml` — research threads shown on the home page (title, summary, tags)
 - `_data/talks.yml` — invited talks (date, venue)
 - `_data/events.yml` — conferences/events attended or presented at
@@ -36,7 +38,9 @@ to update it, just swap the file and keep the same name, or update the `src` in 
 ## Still to fill in
 
 - `index.md` / `about.md`: swap the placeholder Google Scholar, Substack, and Affiliation links for your real URLs
-- Add your actual CV as `assets/cv.pdf` (linked from the about page)
+- `index.md`: the linkedin/bluesky/x buttons in "let's chat" are placeholder `#` links — swap in your real profile URLs
+- Add your actual CV as `assets/cv.pdf` (linked from home and the about page)
+- The "anna neumann et al." placeholder in `_data/publications.yml` needs real full author lists per paper
 - Several `url: "#"` placeholders in `_data/*.yml` and `_data/publications.yml` need real URLs
 
 ## Preview locally

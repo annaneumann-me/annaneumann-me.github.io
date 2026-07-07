@@ -25,6 +25,7 @@ permalink: /publications/
         <h3>{{ p.title }}</h3>
         {% if p.status %}<span class="tag">✦ {{ p.status }}</span>{% endif %}
       </div>
+      {% if p.authors %}<p class="authors">{{ p.authors }}</p>{% endif %}
       <p class="meta"><span class="venue">{{ p.venue }}</span> · <span style="font-style: italic;">{{ p.role }}</span></p>
       {% if p.links %}
       <div class="links">

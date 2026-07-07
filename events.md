@@ -1,7 +1,7 @@
 ---
 layout: default
-title: talks
-permalink: /talks/
+title: events
+permalink: /events/
 ---
 
 <header class="page-header">

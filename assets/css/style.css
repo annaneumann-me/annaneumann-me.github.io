@@ -193,6 +193,7 @@ a.tag--poster:hover { background: oklch(0.7 0.06 145); color: oklch(0.98 0.01 14
 .year-heading .count { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted-foreground); }
 
 .pub-card h3 { font-size: 1.05rem; color: var(--foreground); line-height: 1.4; margin: 0; }
+.pub-card .authors { margin: 0.3rem 0 0; font-size: 0.85rem; color: var(--muted-foreground); }
 .pub-card .meta { margin-top: 0.4rem; font-size: 0.9rem; color: var(--muted-foreground); }
 .pub-card .meta .venue { color: oklch(0.35 0.04 150); font-weight: 500; }
 .pub-card .links { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
@@ -218,7 +219,7 @@ a.tag--poster:hover { background: oklch(0.7 0.06 145); color: oklch(0.98 0.01 14
 .two-col { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 3.5rem; }
 @media (min-width: 768px) { .two-col { grid-template-columns: 1fr 1fr; } }
 
-.hero { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: end; }
+.hero { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start; }
 @media (min-width: 768px) { .hero { grid-template-columns: 1fr auto; } }
 .hero h1 { font-size: 3rem; line-height: 1.05; color: var(--primary); margin-top: 1rem; }
 @media (min-width: 768px) { .hero h1 { font-size: 3.75rem; } }
@@ -249,14 +250,15 @@ a.tag--poster:hover { background: oklch(0.7 0.06 145); color: oklch(0.98 0.01 14
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(1) contrast(1.08) brightness(1.02);
+  filter: grayscale(1) contrast(1.05) brightness(1.08);
 }
 .avatar::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(155deg, oklch(0.42 0.07 150 / 0.6), oklch(0.8 0.1 145 / 0.32));
-  mix-blend-mode: multiply;
+  background: var(--matcha);
+  mix-blend-mode: color;
+  opacity: 0.5;
 }
 
 /* media card (compact list inside a soft-card, used on home) */
