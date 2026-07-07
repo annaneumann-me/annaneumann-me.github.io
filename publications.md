@@ -28,7 +28,7 @@ permalink: /publications/
       <p class="meta"><span class="venue">{{ p.venue }}</span> · <span style="font-style: italic;">{{ p.role }}</span></p>
       {% if p.links %}
       <div class="links">
-        {% for l in p.links %}<a class="tag" href="{{ l.url }}">{{ l.label }} ↗</a>{% endfor %}
+        {% for l in p.links %}<a class="tag tag--{{ l.type }}" href="{{ l.url }}">{{ l.type }} ↗</a>{% endfor %}
       </div>
       {% endif %}
     </li>

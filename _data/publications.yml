@@ -1,4 +1,6 @@
 # Copy a block to add a new paper. "status" and "links" are optional.
+# Each link has a "type" (paper / arxiv / video / poster — each gets its own green hue)
+# and a "url". Add as many link types per paper as you have.
 - title: "governing technology governed by natural language"
   venue: "FAccT'26"
   role: "first author"
@@ -16,7 +18,7 @@
   role: "first author"
   year: 2026
   links:
-    - label: "video"
+    - type: "video"
       url: "#"
 
 - title: "position is power: system prompts as a mechanism of bias in language models"
@@ -24,7 +26,11 @@
   role: "first author"
   year: 2025
   links:
-    - label: "video"
+    - type: "paper"
+      url: "#"
+    - type: "video"
+      url: "#"
+    - type: "poster"
       url: "#"
 
 - title: "cascading effects: a multifaceted governance challenge in ai systems"
@@ -56,6 +62,9 @@
   venue: "arXiv'26"
   role: "co-author"
   year: 2026
+  links:
+    - type: "arxiv"
+      url: "#"
 
 - title: "deep learning-based claim matching with multiple negatives training"
   venue: "ICNLSP'23"
