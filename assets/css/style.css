@@ -287,34 +287,27 @@ a.tag--poster:hover { background: oklch(0.7 0.06 145); color: oklch(0.98 0.01 14
 .media-card .date { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted-foreground); }
 .media-card .title { margin-top: 0.25rem; font-family: var(--font-serif); font-size: 0.98rem; color: var(--primary); line-height: 1.35; }
 
-/* gallery / carousel — CSS-only scroll-snap, no JS required */
-.carousel {
-  display: flex;
-  gap: 1.25rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 1rem 0 1.5rem;
+/* photo gallery — masonry grid, images keep their natural proportions */
+.photo-gallery {
+  column-count: 1;
+  column-gap: 1.25rem;
   margin-top: 2rem;
-  -webkit-overflow-scrolling: touch;
 }
-.carousel::-webkit-scrollbar { height: 8px; }
-.carousel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
-.carousel-item {
-  flex: 0 0 auto;
-  width: min(80vw, 420px);
-  scroll-snap-align: center;
+@media (min-width: 640px) { .photo-gallery { column-count: 2; } }
+@media (min-width: 1000px) { .photo-gallery { column-count: 3; } }
+.photo-gallery figure {
+  margin: 0 0 1.25rem;
+  break-inside: avoid;
 }
-.carousel-item figure { margin: 0; }
-.carousel-item img {
+.photo-gallery img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  display: block;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: 0 10px 30px -20px oklch(0.4 0.06 150 / 0.3);
 }
-.carousel-item figcaption {
-  margin-top: 0.6rem;
+.photo-gallery figcaption {
+  margin-top: 0.5rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--muted-foreground);

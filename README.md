@@ -9,7 +9,7 @@ Personal research site, built with Jekyll (GitHub Pages builds this automaticall
 - `publications.md` — publications, grouped by year, with authors and typed file links (paper/arxiv/video/poster)
 - `events.md` — invited talks and events, card-based with tags and group/event links
 - `teaching.md` — courses and supervised theses
-- `gallery.md` — photo carousel, auto-populated from `assets/img/gallery/`
+- `gallery.md` — masonry photo grid, auto-populated from `assets/img/gallery/`
 
 ## Editing content
 
@@ -35,7 +35,8 @@ Everything you'll normally touch is in `_data/*.yml`:
 ## Gallery
 
 Just drop an image file into `assets/img/gallery/` and it automatically appears in the
-carousel on `/gallery/` — no data file to edit. The caption is generated from the filename
+grid on `/gallery/` — no data file to edit. Images keep their natural proportions (no
+cropping), so any size/orientation works. The caption is generated from the filename
 (dashes/underscores become spaces), so name files accordingly, e.g. `matcha-shop-berlin.jpg`
 becomes "matcha shop berlin".
 
