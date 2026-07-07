@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+
+:root {
+  --bg: #faf8f4;
+  --text: #2b2b26;
+  --muted: #6b6b62;
+  --accent: #5c7a5c;
+  --border: #e4e0d6;
+  --max-width: 680px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 { font-size: 1.9rem; margin: 0 0 0.5rem; }
+h2 {
+  font-size: 1.15rem;
+  margin: 2.5rem 0 0.75rem;
+  color: var(--accent);
+}
+h3 { font-size: 1rem; margin: 1.5rem 0 0.25rem; }
+
+p { margin: 0.75rem 0; }
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-color: var(--accent); color: var(--accent); }
+
+ul, ol { padding-left: 1.25rem; }
+li { margin: 0.4rem 0; }
+
+.tagline { color: var(--muted); font-size: 0.98rem; }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.site-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--text);
+}
+.site-header nav a {
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--muted);
+}
+.site-header nav a:first-child { margin-left: 0; }
+.site-header nav a.active,
+.site-header nav a:hover { color: var(--accent); }
+
+.entry-list { list-style: none; padding-left: 0; }
+.entry-list li { margin: 0.9rem 0; }
+.entry-list .meta { color: var(--muted); font-size: 0.9rem; }
+.entry-list .links { font-size: 0.9rem; }
+.entry-list .links a { margin-right: 0.6rem; }
+.award {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+  margin-left: 0.4rem;
+}
+
+.links-list { list-style: none; padding-left: 0; }
+.links-list li { margin: 0.3rem 0; }
+
+.site-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+section + section { margin-top: 0.5rem; }

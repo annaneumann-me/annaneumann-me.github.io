@@ -1,0 +1,24 @@
+title: Anna Neumann
+description: >-
+  PhD student examining how AI systems influence sociotechnical structures,
+  with a focus on responsible AI practices in algorithmic supply chains.
+author: Anna Neumann
+email: your.email@example.com
+
+# Base URL — leave empty, this repo is a user site (annaneumann-me.github.io)
+baseurl: ""
+url: "https://annaneumann-me.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
