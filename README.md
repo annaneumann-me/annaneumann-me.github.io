@@ -2,6 +2,26 @@
 
 Personal research site, built with Jekyll (GitHub Pages builds this automatically — no build step needed once pushed).
 
+## Color theme
+
+Open `_config.yml` and change one line:
+
+```yaml
+color_theme: navy
+```
+
+Options:
+
+- **navy** *(default)* — warm coral/terracotta with a navy ink, off the Paulaner Spezi can
+- **sorbet** — navy + a pink-shifted accent
+- **wave** — sorbet, plus the background gradient itself picks up a pink cast
+- **sunset** — pure warm coral/terracotta, no navy
+- **moss** — the original pastel green
+
+That's the only edit needed — every color on every page (backgrounds, cards, tags, borders,
+the photo's duotone wash) derives from the theme, nothing is hardcoded per-page. Save, then
+follow "Deploy" below to push it live.
+
 ## Pages
 
 - `index.md` — home: hero, "media" / "let's chat + obsessed with" cards, research threads
@@ -17,7 +37,8 @@ Everything you'll normally touch is in `_data/*.yml`:
 
 - `_data/publications.yml` — copy a block to add a new paper. `status`, `authors`, and `links`
   are optional. `authors` is a plain string with the full author list. Each link has a `type`
-  (`paper` / `arxiv` / `video` / `poster` — each renders in a different green hue) and a `url`.
+  (`paper` / `arxiv` / `video` / `poster` — each renders in a different hue within the active
+  color theme) and a `url`.
   - To link to a **paper PDF** you have locally: drop it into `assets/documents/papers/`, set
     `url: "/assets/documents/papers/yourfile.pdf"`.
   - To link to a **poster**: drop it into `assets/documents/posters/`, set
@@ -47,8 +68,9 @@ cropping), so any size/orientation works. No captions are shown.
 ## Photo
 
 The homepage portrait is `assets/img/anna.jpg`, rendered in black-and-white with a subtle
-green shimmer (pure CSS, see `.avatar` in `assets/css/style.css` — no image editing needed
-to update it, just swap the file and keep the same name, or update the `src` in `index.md`).
+color shimmer in the active theme's tone (pure CSS, see `.avatar` in `assets/css/style.css` —
+no image editing needed to update it, just swap the file and keep the same name, or update
+the `src` in `index.md`).
 
 ## Still to fill in
 

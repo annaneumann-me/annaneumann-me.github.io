@@ -1,3 +1,7 @@
+# Color theme — change this one word to switch the whole site's palette.
+# Options: navy, sorbet, wave, sunset, moss
+color_theme: navy
+
 title: anna neumann
 description: >-
   phd student examining how ai systems influence sociotechnical structures,
