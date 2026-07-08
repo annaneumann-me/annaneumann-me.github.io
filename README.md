@@ -18,10 +18,10 @@ Everything you'll normally touch is in `_data/*.yml`:
 - `_data/publications.yml` — copy a block to add a new paper. `status`, `authors`, and `links`
   are optional. `authors` is a plain string with the full author list. Each link has a `type`
   (`paper` / `arxiv` / `video` / `poster` — each renders in a different green hue) and a `url`.
-  - To link to a **paper PDF** you have locally: drop it into `assets/papers/`, set
-    `url: "/assets/papers/yourfile.pdf"`.
-  - To link to a **poster**: drop it into `assets/posters/`, set
-    `url: "/assets/posters/yourfile.pdf"`.
+  - To link to a **paper PDF** you have locally: drop it into `assets/documents/papers/`, set
+    `url: "/assets/documents/papers/yourfile.pdf"`.
+  - To link to a **poster**: drop it into `assets/documents/posters/`, set
+    `url: "/assets/documents/posters/yourfile.pdf"`.
   - `video` / `arxiv` links are usually external URLs.
 - `_data/projects.yml` — research threads shown on the home page (title, summary, tags)
 - `_data/talks.yml` — invited talks (date, venue). `role` and `url` (link to the hosting group) are optional.
@@ -31,6 +31,12 @@ Everything you'll normally touch is in `_data/*.yml`:
 - `_data/service.yml` — academic service, shown on the about page. `external` entries are
   `{venue, role}` (role renders as a tag, e.g. "reviewer"); `internal` entries are `{year, role}`.
 - `_data/teaching.yml` — courses and supervised theses
+
+## Documents
+
+`assets/documents/` holds any file you want to link to — `cv.pdf` goes directly in there,
+paper PDFs go in `assets/documents/papers/`, posters in `assets/documents/posters/`. Link to
+any of them with a normal `/assets/documents/...` URL.
 
 ## Gallery
 
@@ -48,7 +54,7 @@ to update it, just swap the file and keep the same name, or update the `src` in 
 
 - `index.md` / `about.md`: swap the placeholder Google Scholar, Substack, and Affiliation links for your real URLs
 - `index.md`: the linkedin/bluesky/x buttons in "let's chat" are placeholder `#` links — swap in your real profile URLs
-- Add your actual CV as `assets/cv.pdf` (linked from home and the about page)
+- Add your actual CV as `assets/documents/cv.pdf` (linked from home and the about page)
 - The "anna neumann et al." placeholder in `_data/publications.yml` needs real full author lists per paper
 - Several `url: "#"` placeholders in `_data/*.yml` and `_data/publications.yml` need real URLs (group pages, event pages, media articles, paper/poster files)
 

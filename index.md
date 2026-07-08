@@ -11,7 +11,7 @@ title: home
     <p class="focus">examining how ai systems influence sociotechnical structures with a focus on responsible ai practices in algorithmic supply chains</p>
 
     <div class="links">
-      <a class="tag" href="/assets/cv.pdf">cv ↗</a>
+      <a class="tag" href="/assets/documents/cv.pdf">cv ↗</a>
       <a class="tag" href="https://scholar.google.com/">google scholar ↗</a>
       <a class="tag" href="https://substack.com/">substack ↗</a>
       <a class="tag" href="#">affiliation ↗</a>

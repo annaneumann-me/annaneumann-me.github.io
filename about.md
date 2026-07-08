@@ -10,7 +10,7 @@ permalink: /about/
 </header>
 
 <div class="links" style="margin-top: 1.5rem;">
-  <a class="tag tag--paper" href="/assets/cv.pdf" style="font-size: 0.8rem; padding: 0.4rem 1rem;">download cv ↗</a>
+  <a class="tag tag--paper" href="/assets/documents/cv.pdf" style="font-size: 0.8rem; padding: 0.4rem 1rem;">download cv ↗</a>
 </div>
 
 <ul class="about-list" style="margin-top: 2rem;">
