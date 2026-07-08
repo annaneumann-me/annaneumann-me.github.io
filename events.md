@@ -11,17 +11,15 @@ permalink: /events/
 
 <section style="margin-top: 3rem;">
   <div class="section-heading"><h2>invited talks</h2></div>
-  <ul class="entry-list">
+  <ul class="dated-list">
     {% for t in site.data.talks %}
-    <li class="soft-card pub-card">
-      <p class="entry-date">{{ t.date }}</p>
-      <div class="top-row">
-        <h3>{{ t.venue }}</h3>
-      </div>
-      {% if t.role %}<p class="meta" style="font-style: italic;">{{ t.role }}</p>{% endif %}
-      {% if t.url and t.url != "#" %}
-      <div class="links"><a class="tag tag--paper" href="{{ t.url }}">group ↗</a></div>
-      {% endif %}
+    <li>
+      <span class="date">{{ t.date }}</span>
+      <span class="row-content">
+        <span class="venue-text">{{ t.venue }}</span>
+        {% if t.role %}<span class="row-note">— {{ t.role }}</span>{% endif %}
+        {% if t.url and t.url != "#" %}<a class="tag tag--paper" href="{{ t.url }}">group ↗</a>{% endif %}
+      </span>
     </li>
     {% endfor %}
   </ul>
@@ -29,18 +27,16 @@ permalink: /events/
 
 <section style="margin-top: 3.5rem;">
   <div class="section-heading"><h2>events</h2></div>
-  <ul class="entry-list">
+  <ul class="dated-list">
     {% for e in site.data.events %}
-    <li class="soft-card pub-card">
-      <div class="top-row">
-        <p class="entry-date" style="margin: 0;">{{ e.date }}</p>
+    <li>
+      <span class="date">{{ e.date }}</span>
+      <span class="row-content">
+        <span class="venue-text">{{ e.venue }}</span>
         {% if e.role %}<span class="tag tag--video">{{ e.role }}</span>{% endif %}
-      </div>
-      <h3 style="margin-top: 0.35rem;">{{ e.venue }}</h3>
-      {% if e.note %}<p class="meta" style="font-style: italic;">{{ e.note }}</p>{% endif %}
-      {% if e.url and e.url != "#" %}
-      <div class="links"><a class="tag tag--paper" href="{{ e.url }}">visit ↗</a></div>
-      {% endif %}
+        {% if e.note %}<span class="row-note">— {{ e.note }}</span>{% endif %}
+        {% if e.url and e.url != "#" %}<a class="tag tag--paper" href="{{ e.url }}">visit ↗</a>{% endif %}
+      </span>
     </li>
     {% endfor %}
   </ul>
